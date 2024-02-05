@@ -1,0 +1,8 @@
+/**
+  将px转为rem
+**/
+@use 'sass:math';
+$BaseFontSize: 100;
+@function px2rem($px) {
+  @return math.div($px, $BaseFontSize) * 1rem;
+}
